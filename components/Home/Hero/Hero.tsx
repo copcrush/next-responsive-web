@@ -5,24 +5,27 @@ import { FaStar } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-[110vh] sm:h-screen flex items-center flex-col justify-center">
-      <div className="w-[90%] md:w-[80%] mx-auto items-center grid grid-cols-1 xl:grid-cols-2 gap-10">
+    <div className="relative w-full h-[130vh] sm:h-screen flex justify-center items-center">
+      <div className="w-[90%] md:w-[80%] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-10">
         {/* Text Content */}
         <div>
           <p className="text-sm sm:text-base md:text-xl font-bold text-blue-950">
             Make the smartest investment
           </p>
-          <h1 className="text-2xl md:text-3xl lg:text-4xl mt-6 mb-6 font-bold text-blue-950 loading-[2.5rem] md:loading-[3.5rem]">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl mt-6 mb-6 font-bold text-blue-950 leading-[2.5rem] md:leading-[3.5rem]">
             Chase New, Operator, and Play with{" "}
             <span className="text-rose-700">DevZ</span>
           </h1>
           <p className="text-xs sm:text-sm md:text-base font-medium text-gray-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
-            laudantium molestiae, quo libero id, esse corporis culpa iure
-            dignissimos in nihil sapiente minus obcaecati unde numquam laborum?
-            Reprehenderit amet cumque omnis exercitationem veritatis! Nobis
-            mollitia sint odit tempore at commodi.
+            Step into a world of smart investments and groundbreaking innovation
+            with
+            <span className="text-rose-700 ml-1">DevZ</span>. We blend
+            cutting-edge technology with strategic insights to keep you ahead of
+            the curve. Whether you're a developer, investor, or visionary
+            looking to bring ideas to life, we're here to help you build a
+            future that thrives and evolves with you.
           </p>
+
           {/* Ratings */}
           <div className="flex sm:flex-row flex-col sm:items-center sm:space-x-10 mt-6">
             <div className="flex items-center space-x-4">
@@ -76,16 +79,18 @@ const Hero = () => {
               </p>
             </div>
           </div>
-          <div className="mt-8 flex flex-col sm:flex-row w-fit sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
+
+          {/* Buttons */}
+          <div className="mt-8 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <a
-              href="#_"
-              className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 text-white bg-green-600 border border-transparent rounded-full md:w-auto hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-600"
+              href="#"
+              className="px-8 py-4 bg-green-600 text-white font-bold rounded-full hover:bg-green-500"
             >
               Learn more...
             </a>
             <a
-              href="#_"
-              className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 text-white bg-red-600 border border-transparent rounded-full md:w-auto hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+              href="#"
+              className="px-8 py-4 bg-red-600 text-white font-bold rounded-full hover:bg-red-500"
             >
               Contact Me
             </a>
@@ -93,12 +98,12 @@ const Hero = () => {
         </div>
 
         {/* Image Content */}
-        <div>
+        <div className="flex justify-center">
           <Image
             src="/images/landing.jpg"
             alt="landing"
-            width={900}
-            height={900}
+            width={500}
+            height={500}
           />
         </div>
       </div>
